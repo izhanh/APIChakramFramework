@@ -1,0 +1,25 @@
+{
+  "name": "ChakramAPITester",
+  "version": "1.0.0",
+  "description": "Chakram based API testing environment",
+  "main": "test.js",
+  "scripts": {
+    "test": "mocha ./specs/*.spec.js --timeout 10000 --reporter mocha-multi-reporters --reporter-options configFile=config.json"
+  },
+  "author": "Izhan Hernández",
+  "license": "ISC",
+  "dependencies": {
+    "amazon-cognito-auth-js": "^1.2.4",
+    "amazon-cognito-identity-js": "^3.0.3",
+    "aws-sdk": "^2.7.16",
+    "chai": "^4.2.0",
+    "chakram": "^1.5.0",
+    "mocha": "^5.2.0",
+    "mocha-data-driven": "^1.0.1",
+    "mocha-multi-reporters": "^1.1.7",
+    "mochawesome": "^3.1.1",
+    "mochawesome-report-generator": "^3.0.1",
+    "mysql": "^2.16.0",
+    "node-fetch": "^2.3.0"
+  }
+}

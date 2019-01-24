@@ -1,0 +1,24 @@
+{
+    "protocol": "https",
+    "host": {Host},
+    "maxResponseTime": 10000,
+    "mainPath": {Path},
+    "awsProperties": {
+        "AccessKey": {AwsAccessKey},
+        "SecretKey": {AwsSecretKey},
+        "region": {AwsRegion},
+        "service": "execute-api"
+    },
+    "s3Bucket": {
+        "bucketName": {S3Bucket},
+        "defaultRegion": {S3Region},
+        "accessKey": {S3AccessKey},
+        "accessKeySecret": {S3SecretKey}
+    },
+    "qmetry": {
+        "apiKey": {QMetryApiKey},
+        "reportFormat": "junit/xml",
+        "jiraProject": {JiraProjectName},
+        "reportFile": "../testOutput/ohp.report.xml"
+    }
+}
