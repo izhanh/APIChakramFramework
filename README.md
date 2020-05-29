@@ -1,4 +1,4 @@
-# MEDIKTIV BACKEND API TEST FRAMEWORK
+# BACKEND API TEST FRAMEWORK
 
 ## API Testing Framework with Chakram + Mocha (Node.js)
 
