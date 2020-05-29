@@ -1,31 +1,28 @@
-# API Testing Framework with Chakram + Mocha (Node.js)
+# MEDIKTIV BACKEND API TEST FRAMEWORK
 
-This is NodeJS project for API auto tests using Mocha as test runner and Chrakram as an API testing library. Requirements:
+## API Testing Framework with Chakram + Mocha (Node.js)
 
-* Latest version of NodeJS
-* Run:
+### Prerequsites:
+    - NodeJS (8.10+)
+    - npm (6.0+)
 
-```
-    npm install
-```
+### Installation:
+    npm run build
 
-## How to run tests
+### Usage:
+    npm test
+        Mandatory Params: {test_tag} {environment}
+        Optional Params: {no clean: no-clean}
 
-First you need to update config.json configuration:
+    example: npm test all local
 
-* {Host} - your test environment host (Example: api.dev123.ohpen.com)
+### Linter:
+    npm run lint
+    npm run lintfix
 
-Then to start test execute run.sh or run:
+### Test Reports (will install Allure if not in /node_modules yet):
+	npm run report
+	
+This command will read the 'test_output' folder that is generated automatically upon running tests, load a webserver and open a page (in your default browser) with the test results:
 
-```
-    ./run.sh [TESTNAME]* [TESTGROUP]**
-```
-
-( * ) Test name is mandatory
-( ** ) Test group tag is optional
-
-For running every single test in all test files run:
-
-```
-    ./run.sh all
-```
+![Allure test report](https://i.imgur.com/c20APkn.png)
