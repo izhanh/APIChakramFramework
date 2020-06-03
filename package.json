@@ -35,7 +35,7 @@
   },
   "reporterEnabled": "mochawesome, mocha-sonarqube-reporter, mocha-allure-reporter",
   "test_config": {
-    "host": "host",
+    "host": {HOST},
     "main_path": "/v1",
     "protocol": "https",
     "max_timeout": 60000,
