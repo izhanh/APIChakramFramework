@@ -1,28 +1,20 @@
-// ================================================================================================================================================ //
-// EXAMPLE TESTS
-//      Date: 27/05/2020
-//      Author: Izhan Hernández
-//      Description: Example Tests for Framework Testing
-// ================================================================================================================================================ //
-
-// ================================================================================================================================================ //
+/ ================================================================================================================================================ //
 // IMPORTS
 // ================================================================================================================================================ //
 
 const   fs = require("fs"),
-		chakram = require('chakram'),
+	chakram = require('chakram'),
         expect = chakram.expect,
         localPath = require('path'),
-        configFile = fs.readFileSync(localPath.resolve(__dirname, "../config.json")),
-		jsonContent = JSON.parse(configFile);
+        configFile = fs.readFileSync(localPath.resolve(__dirname, "../package.json")),
+	jsonContent = JSON.parse(configFile).test_config;
 
 var 	host = jsonContent.host,
         opts, chakramOpts, reusabelVar,
-		protocol = jsonContent.protocol,
-		mainPath = jsonContent.mainPath,
-	 	awsProperties = jsonContent.awsProperties,
-	 	maxResponseTime = jsonContent.maxResponseTime,
-	 	baseUrl = protocol + "://" + host + "/" + mainPath;
+	protocol = jsonContent.protocol,
+	mainPath = jsonContent.main_path,
+	maxResponseTime = jsonContent.max_response_time,
+	baseUrl = protocol + "://" + host + "/" + mainPath;
 
 // ================================================================================================================================================ //
 // TEST DATA
