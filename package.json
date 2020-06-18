@@ -45,5 +45,11 @@
     "sonar_project": {SONARQUBE_PROJECT},
     "sonar_url": {SONARQUBE_URL},
     "sonar_token": {SONARQUBE_TOKEN}
+  },
+  "aws_config": {
+    "aws_profile": {AWS_PROFILE},
+    "s3_project": {S3_PROJECT},
+    "s3_bucket_acl": "public-read",
+    "s3_bucket": {S3_BUCKET}
   }
 }
