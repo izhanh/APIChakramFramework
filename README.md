@@ -12,7 +12,7 @@
 ### Usage:
     npm test
         Mandatory Params: {test_tag} {environment}
-        Optional Params: {no clean: no-clean}
+        Optional Params: {no clean: no-clean} {send sonarqube report: sonar} {send reports to s3: s3}
 
     example: npm test all local
 
